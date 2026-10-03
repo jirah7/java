@@ -11,14 +11,16 @@ package week1;
 public class Expert {
     public static void main(String[] args) {
         
-        byte num =  127; 
+        byte num =  127; // A byte can only hold -128 to 127. Adding 1 to 127 goes past the limit
         num++; 
         System.out.println("byte: " + num);
         
         String name1 = new String ("Jirah");
         String name2 = new String ("Jirah");
         String name3 = "Jirah"; 
-        
+
+         /* == checks if two variables point to the same object in memory
+         .equals() checks if the text is the same.*/
         System.out.println("name1  == name2: " + (name1 == name2));
         System.out.println("name1 == name3: "  + (name1 ==  name3));
         System.out.println("name2 == name3: " + (name2 == name3));
@@ -27,7 +29,7 @@ public class Expert {
         System.out.println("name2.equals(name3): " + name2.equals(name3));
         
         String[] sports = {"basketball", "badminton", "volleyball"};
-        String[] sports2 = sports;
+        String[] sports2 = sports;   
         
         System.out.println("\nBefore Modification");
         System.out.println("Sports[1]: " + sports[0]);
