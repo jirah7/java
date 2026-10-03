@@ -13,7 +13,7 @@ public class Advanced {
     
     double centimeters = 287.7; 
     
-    int wholemeters = (int) (centimeters / 100);
+    int wholemeters = (int) (centimeters / 100); // explicit cast: drops the decimal part
     double remaining = centimeters - (wholemeters * 100);
     
         System.out.println("Centimeters: " + centimeters);
@@ -24,12 +24,12 @@ public class Advanced {
         System.out.println("\nImplicit Widening");    
     int smallNum = 7; 
     double widened = smallNum; 
-        System.out.println("Integer: " + smallNum);
+        System.out.println("Integer: " + smallNum); // no cast needed because a double can hold every int value, so nothing is lost
         System.out.println("Becomes double: " + widened);
         
          System.out.println("\nExplicit Narrowing");
     double decimalNum = 10.99;
-    int narrowed = (int) decimalNum;
+    int narrowed = (int) decimalNum; // cast required: the .99 is lost
         System.out.println("Double: " + decimalNum);
         System.out.println("Becomes int: " + narrowed);
         
