@@ -29,7 +29,6 @@ public class Expert {
         // Third is arithmetic and increment
         // Prediction 3: 8 because num1 will increment first before it multiplies it self to 2 
         // the after multiplication it will just add the incremented num1 and multiplied 2 
-        
         System.out.println("Expression 3: " + (num1++ * 2 + num1));
 
         
